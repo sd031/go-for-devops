@@ -92,6 +92,10 @@ Welcome to the "GoLang for DevOps" course repository. This course is designed fo
 - Performance optimization
 - Best practices for using GoLang in a DevOps culture
 
+### Day 15: Go Lang Interview Questions & Answers
+- Prepare for common GoLang-related interview questions.
+- Understand the types of problems and challenges GoLang developers face.
+
 
 ## Hands-On Exercises
 
