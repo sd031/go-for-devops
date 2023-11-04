@@ -61,26 +61,22 @@ Welcome to the "GoLang for DevOps" course repository. This course is designed fo
 - Interacting with the Docker API
 - Container orchestration basics (Kubernetes overview)
 
-### Day 10: Continuous Integration/Continuous Deployment (CI/CD) Pipelines
+### Day 10: Kubernetes Plugin Development with Go
+- Understand Kubernetes Plugin Development
+- Setting up a development environment for Kubernetes plugin development
+- Develop one kubernetes plugin with go 
+
+### Day 11: Continuous Integration/Continuous Deployment (CI/CD) Pipelines
 - Building CI/CD pipelines with Go
 - Integration with Jenkins, Travis CI, or GitHub Actions
 - Automated testing and deployment strategies
 - Monitoring and logging in CI/CD with Go
 
-### Day 11: Infrastructure as Code (IaC) with GoLang
+### Day 12: Infrastructure as Code (IaC) with GoLang
 - Introduction to Terraform and IaC
 - Writing custom Terraform providers in Go
 - Managing cloud resources with Go
 - GoLang in serverless architectures
-
-### Day 12: GoLang with AWS Cloud for DevOps
-- Introduction to AWS services relevant to DevOps
-- Setting up the AWS CLI and SDK for Go
-- Writing Go applications that interact with AWS services (e.g., EC2, S3, Lambda)
-- Deploying Go applications on AWS Elastic Beanstalk and AWS Lambda
-- Infrastructure as Code using AWS CloudFormation and Go
-- Implementing AWS security best practices in Go (IAM, KMS)
-- Monitoring and scaling Go applications on AWS (CloudWatch, Auto Scaling)
 
 ### Day 13: Monitoring, Logging, and Observability
 - Implementing logging in Go applications
@@ -88,11 +84,14 @@ Welcome to the "GoLang for DevOps" course repository. This course is designed fo
 - Tracing and observability in microservices
 - Alerting and incident management automation
 
+### Day 14: GoLang with AWS Cloud for DevOps
+- Introduction to AWS services relevant to DevOps
+- Setting up the AWS CLI and SDK for Go
+- Writing Go applications that interact with AWS services (e.g., EC2, S3, Lambda)
+- Deploying Go applications on AWS Lambda
+- Infrastructure as Code using AWS CloudFormation and Go (AWS CDK)
+- Monitoring and scaling Go applications on AWS (CloudWatch, Auto Scaling)
 
-### Day 14: Kubernetes Plugin Development with Go
-- Understand Kubernetes Plugin Development
-- Setting up a development environment for Kubernetes plugin development
-- Develop one kubernetes plugin with go 
 
 ### Day 15: Final Project and Best Practices
 - Applying GoLang to a real-world DevOps project
