@@ -101,9 +101,9 @@ Welcome to the "GoLang for DevOps" course repository. This course is designed fo
 
 Each day includes hands-on coding exercises and assignments to reinforce the concepts learned. Ensure you commit your code daily to track your progress and for future reference.
 
-## Doubt Cleannce
+## Doubt Clearance
 
-Each weekend there will be dedicated live session on my youtube channel to clean your doubts
+Each weekend there will be a dedicated live session on my youtube channel to clean up your doubts
 
 ## Final Project
 
