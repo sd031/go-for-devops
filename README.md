@@ -88,13 +88,19 @@ Welcome to the "GoLang for DevOps" course repository. This course is designed fo
 - Tracing and observability in microservices
 - Alerting and incident management automation
 
-### Day 14: Final Project and Best Practices
+
+### Day 14: Kubernetes Plugin Development with Go
+- Understand Kubernetes Plugin Development
+- Setting up a development environment for Kubernetes plugin development
+- Develop one kubernetes plugin with go 
+
+### Day 15: Final Project and Best Practices
 - Applying GoLang to a real-world DevOps project
 - Code reviews and maintaining Go codebases
 - Performance optimization
 - Best practices for using GoLang in a DevOps culture
 
-### Day 15: Go Lang Interview Questions & Answers
+### Day 16: Go Lang Interview Questions & Answers
 - Prepare for common GoLang-related interview questions.
 - Understand the types of problems and challenges GoLang developers face.
 
