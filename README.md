@@ -1,4 +1,6 @@
 # GoLang for DevOps
+![day0](https://github.com/sd031/go-for-devops/assets/6078551/8927b6ba-88ea-4a90-8cfd-760416f587fa)
+
 
 Welcome to the "GoLang for DevOps" course repository. This course is designed for DevOps engineers who want to learn how to apply the Go programming language to their daily workflows and integrate Go with various DevOps practices, including cloud services like AWS.
 
