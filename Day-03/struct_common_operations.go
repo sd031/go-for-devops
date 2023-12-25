@@ -34,7 +34,7 @@ func main() {
 
 	// Pointers to structs
 	bob := &Person{Name: "Bob", Age: 25}
-	fmt.Println("Pointer to Struct:", bob)
+	fmt.Println("Pointer to Struct:", *bob)
 
 	// Methods on structs
 	alice.SayHello()

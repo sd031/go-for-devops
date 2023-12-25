@@ -4,11 +4,6 @@ import (
 	"fmt"
 )
 
-// Normal Operations
-func Add(a, b int) int {
-	return a + b
-}
-
 // Implementing an Interface
 type Greeter interface {
 	Greet() string
@@ -45,9 +40,6 @@ func Describe(i interface{}) {
 }
 
 func main() {
-	// Normal Operation
-	fmt.Println("Add 2 and 3:", Add(2, 3))
-
 	// Implementing an Interface
 	person := Person{Name: "Alice"}
 	var greeter Greeter = person

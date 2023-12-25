@@ -12,7 +12,7 @@ func main() {
 	fruits["orange"] = 7
 
 	// Iterate over the map
-	for fruit, quantity := range fruits {
-		fmt.Printf("%s: %d\n", fruit, quantity)
+	for key, value := range fruits {
+		fmt.Printf("%s: %d\n", key, value)
 	}
 }

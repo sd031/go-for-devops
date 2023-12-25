@@ -17,6 +17,7 @@ func main() {
 
 	// 3. Using the make Function
 	slice3 := make([]int, 3) // Length and capacity are 3
+	fmt.Println("Slice 3 before putting value:", slice3)
 	slice3[0] = 7
 	slice3[1] = 8
 	slice3[2] = 9
@@ -28,13 +29,15 @@ func main() {
 	fmt.Println("Slice 4:", slice4)
 	slice4 = append(slice4, 10)
 	slice4 = append(slice4, 11)
+	fmt.Println("Slice 4 after append:", slice4)
 	fmt.Println("Slice 4 Capacity:", cap(slice4))
-	// slice4 = append(slice4, 12)
-	// slice4 = append(slice4, 13)
-	// fmt.Println("Slice 4 Capcity:", cap(slice4))
+	slice4 = append(slice4, 12)
+	slice4 = append(slice4, 13)
+	fmt.Println("Slice 4 after append again:", slice4)
+	fmt.Println("Slice 4 Capcity:", cap(slice4))
 
 	// 4. From an Array
 	array := [5]int{10, 11, 12, 13, 14}
 	slice5 := array[1:4] // Slicing from index 1 to 3 (excluding index 4)
-	fmt.Println("Slice 4:", slice5)
+	fmt.Println("Slice 5:", slice5)
 }

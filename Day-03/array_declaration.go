@@ -45,6 +45,10 @@ func main() {
 	}
 
 	// 9. Arrays of Structs
+	type Person struct {
+		Name string
+		Age  int
+	}
 	var structArray [2]Person
 	structArray[0] = Person{"Alice", 30}
 	structArray[1] = Person{"Bob", 25}

@@ -62,7 +62,7 @@ func main() {
 	}
 	// Example of checking and handling errors with custom errors:
 	err2 := SomeFunction(false)
-	if err != nil {
+	if err2 != nil {
 		fmt.Println("Error:", err2)
 	}
 
