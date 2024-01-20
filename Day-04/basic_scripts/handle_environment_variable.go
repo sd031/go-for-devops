@@ -18,8 +18,8 @@ func main() {
 	}
 
 	// Listing all environment variables
-	fmt.Println("All Environment Variables:")
-	for _, env := range os.Environ() {
-		fmt.Println(env)
-	}
+	// fmt.Println("All Environment Variables:")
+	// for _, env := range os.Environ() {
+	// 	fmt.Println(env)
+	// }
 }

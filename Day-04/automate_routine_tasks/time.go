@@ -48,7 +48,7 @@ func main() {
 	// Write to a log file
 	WriteLog("./data/activity.log", "Routine task executed.")
 
-	// Perform a scheduled task every 10 seconds
+	// Perform a scheduled task every 2 seconds
 	ticker := time.NewTicker(2 * time.Second)
 	quit := make(chan struct{})
 	go func() {
