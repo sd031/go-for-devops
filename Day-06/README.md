@@ -23,4 +23,13 @@ GOOS=freebsd GOARCH=386 go build -o sic-freebsd-386     # 386
 GOOS=freebsd GOARCH=arm go build -o sic-freebsd-arm     # arm
 
 
-#git tag commands
+# Commans to archive binary files
+tar -czvf myapp-linux.tar.gz myapp-linux
+zip myapp-windows.zip myapp-windows.exe 
+
+#git tag and release commands
+git tag -a v1.0.0 -m "Release version 1.0.0"
+git push origin v1.0.0
+gh release create v1.0.0 ./path/to/first_asset.zip ./path/to/second_asset.zip --title "Release Title" --notes "Release notes"
+
+
