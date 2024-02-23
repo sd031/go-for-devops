@@ -12,7 +12,7 @@ type Person struct {
 }
 
 func main() {
-	person := Person{"Alice", 30}
+	person := Person{"Sandip", 32}
 
 	jsonData, err := json.Marshal(person)
 	if err != nil {
