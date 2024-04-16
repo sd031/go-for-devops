@@ -1,0 +1,17 @@
+image: golang:1.17
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Build and Test
+          caches:
+            - go
+          script:
+            - go build -v ./...
+            - go test -v ./...
+      - step:
+          name: Deploy
+          script:
+            - apt-get update && apt-get install -y sshpass
+            - sshpass -p $SERVER_PASSWORD scp ./myapp user@$SERVER_IP:/path/to/deploy

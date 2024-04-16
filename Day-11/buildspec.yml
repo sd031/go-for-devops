@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.17
+    commands:
+      - echo Installing Go dependencies...
+      - go mod tidy
+  pre_build:
+    commands:
+      - echo Running tests...
+  build:
+    commands:
+      - go build -o myapplication ./...
+      - go test -v ./...
+artifacts:
+  files:
+    - myapplication

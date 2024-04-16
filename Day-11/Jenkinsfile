@@ -1,0 +1,57 @@
+pipeline {
+    agent any
+
+    environment {
+        // Set up GOPATH
+        GOPATH = "${WORKSPACE}"
+    }
+
+    stages {
+        stage('Initialize') {
+            steps {
+                script {
+                    // Set up Go bin directory in PATH
+                    env.PATH = "${env.GOPATH}/bin:${env.PATH}"
+                }
+            }
+        }
+        stage('Checkout') {
+            steps {
+                // Check out the source code from version control
+                checkout scm
+            }
+        }
+        stage('Test') {
+            steps {
+                // Run Go tests
+                sh 'go test ./...'
+            }
+        }
+        stage('Build') {
+            steps {
+                // Build the Go application
+                sh 'go build -o myapp'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Add deployment steps here
+                echo 'Deploying application...'
+                // Example: sh 'scp myapp user@server:/path/to/deploy'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up after the pipeline is done
+            cleanWs()
+        }
+        success {
+            echo 'Build and Test Stages Successful!'
+        }
+        failure {
+            echo 'Build or Test Failed!'
+        }
+    }
+}

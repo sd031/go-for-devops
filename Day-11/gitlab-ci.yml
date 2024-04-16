@@ -1,0 +1,29 @@
+stages:
+  - build
+  - test
+
+variables:
+  GO_PROJECT_PATH: $CI_PROJECT_DIR
+  GO111MODULE: "on"
+
+before_script:
+  - export PATH=$PATH:/usr/local/go/bin
+  - mkdir -p $GO_PROJECT_PATH
+  - cd $GO_PROJECT_PATH
+  - go version
+  - go mod tidy
+
+build:
+  image: golang:1.17
+  stage: build
+  script:
+    - go build -v ./...
+  artifacts:
+    paths:
+      - myapp
+
+test:
+  image: golang:1.17
+  stage: test
+  script:
+    - go test -v ./...

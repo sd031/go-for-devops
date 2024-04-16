@@ -1,0 +1,33 @@
+language: go
+
+go:
+  - 1.15
+  - tip
+
+# Only clone the most recent commit.
+git:
+  depth: 1
+
+# Skip the install step. Don't `go get` dependencies. Only build with the code in vendor/
+install: true
+
+# Setting up environment variables.
+env:
+  - GO111MODULE=on
+
+# Script to run before the script phase.
+before_script:
+  - go vet ./...
+
+# Script phase, run tests.
+script:
+  - go test -v ./...
+
+# Only watch the master branch.
+branches:
+  only:
+  - main
+
+# Notifications can be sent to email when a build changes from success to failed or vice versa.
+notifications:
+  email: false
