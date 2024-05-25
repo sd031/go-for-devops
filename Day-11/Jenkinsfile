@@ -31,6 +31,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the Go application
+                sh 'ls'
+                sh 'pwd'
                 sh 'cd go-rest-api && go build -o myapp'
             }
         }
