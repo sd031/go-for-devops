@@ -17,6 +17,6 @@ jobs:
       with:
         go-version: '^1.21'
     - name: Build
-      run: cd ../../Day-11/go-rest-api && go build -o myapp
+      run: cd ./Day-11/go-rest-api && go build -o myapp
     # - name: Test
     #   run: go test -v ./...
