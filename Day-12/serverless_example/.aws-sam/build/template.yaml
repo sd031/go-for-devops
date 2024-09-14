@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  GoLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: main
+      Runtime: provided.al2
+      Architectures:
+      - x86_64
+      CodeUri: GoLambdaFunction
+      MemorySize: 128
+      Timeout: 10
+      Environment:
+        Variables:
+          PARAM_NAME: VALUE
+    Metadata:
+      SamResourceId: GoLambdaFunction
